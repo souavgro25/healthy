@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Healthy company</title>
+  </head>
+  <body>
+    <!-- notifictaion -->
+    <div
+      id="note"
+      class="
+        bg-blue-900
+        py-2
+        flex
+        text-white text-xs
+        md:text-sm
+        items-center
+        justify-center
+        relative
+        text-center
+        md:max-w-none
+      "
+    >
+      <p class="md:max-w-lg max-w-xs">
+        APPLY FIT25 ON CHECKOUT : UPTO 75% OFF + FREE 2-DAY DELIVERY
+      </p>
+      <i
+        id="closenote"
+        class="fas fa-times fa-2x absolute right-4 md:right-10"
+      ></i>
+    </div>
+
+    <!-- Header -->
+
+    <header
+      class="flex justify-between items-center bg-white py-2 sticky top-0 z-20"
+    >
+      <div class="hidden md:flex gap-x-4 text-sm pl-48 dot-none">
+        <li>Home</li>
+        <li>THC Shop</li>
+        <li>Track Order</li>
+      </div>
+      <div class="md:hidden ml-10">
+        <i id="openside" class="fas fa-bars fa-lg text-gray-700"></i>
+      </div>
+      <div class="">
+        <img
+          class="h-12"
+          src="https://d3jooanen2hdt4.cloudfront.net/static/assets/img/thc_logo_new_min.svg"
+          alt="logo"
+        />
+      </div>
+      <div class="flex items-center gap-x-10 mr-5">
+        <div class="hidden md:flex text-sm gap-x-4 dot-none">
+          <li>Our Story</li>
+          <li>Eva: AI Coach</li>
+          <li>Health Blog</li>
+          <li>Contact</li>
+        </div>
+        <div class="flex gap-x-2 items-center">
+          <i class="far fa-user fa-lg"></i>
+          <div class="relative">
+            <img
+              class="h-7"
+              src="https://d3jooanen2hdt4.cloudfront.net/static/assets/icons/shopping-bag.svg"
+              alt="cart"
+            />
+            <p
+              class="
+                rounded
+                text-xs
+                animate-bounce
+                absolute
+                bg-blue-800
+                text-white
+                px-1
+                right-0
+                top-0
+              "
+            >
+              0
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Hero section -->
+    <section
+      style="background-color: #fdfcea"
+      class="flex flex-col items-center justify-center pb-5"
+    >
+      <img
+        class="hero-img"
+        src="https://d3jooanen2hdt4.cloudfront.net/static/assets/img/banner/category/gf-sale-banner.jpeg"
+        alt=""
+      />
+      <div class="flex flex-col items-center -mt-10">
+        <i class="fas fa-arrow-down animate-bounce fa-2x text-gray-500"></i>
+        <button class="rounded-3xl py-3 px-8 bg-yellow-300 text-xl">
+          Shop now
+        </button>
+      </div>
+    </section>
+
+    <!-- sales-end-section -->
+    <section
+      class="
+        bg-blue-900
+        md:flex md:flex-row
+        flex flex-col
+        md:gap-x-8
+        justify-center
+        items-center
+        py-5
+      "
+    >
+      <p class="md:text-4xl text-center text-xl font-bold text-white">
+        Sales Ends in
+      </p>
+      <div class="flex gap-x-5 justify-center">
+        <div class="flex flex-col items-center">
+          <p id="day" class="text-4xl font-bold text-white">00</p>
+          <p class="text-xl text-white montserrat">Days</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <p id="hour" class="text-4xl font-bold text-white">05</p>
+          <p class="text-xl text-white montserrat">Hours</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <p id="minutes" class="text-4xl font-bold text-white">26</p>
+          <p class="text-xl text-white montserrat">Minutes</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <p id="seconds" class="text-4xl font-bold text-white">07</p>
+          <p class="text-xl text-white montserrat">Seconds</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Best selling -->
+    <section class="flex flex-col items-center justify-center gap-y-10">
+      <div class="flex flex-col itmes-center items-center pt-16 gap-y-3">
+        <p class="text-center text-3xl font-bold text-blue-900 font-bold">
+          100% HONEST SUPERFOODS
+        </p>
+        <p class="text-center text-xl text-gray-800">
+          No time to gym or crash diet? Let our proven superfoods help you
+          naturally.
+        </p>
+      </div>
+      <p
+        class="
+          text-center text-3xl
+          font-bold
+          text-blue-900
+          font-bold
+          tracking-wider
+        "
+      >
+        BEST SELLING SUPERFOODS
+      </p>
+
+      <!-- Product-sections -->
+
+      <div
+        class="
+          flex
+          gap-x-1
+          overflow-x-auto
+          mb-10
+          ml-5
+          md:max-w-7xl
+          sm:max-w-xl
+          max-w-sm
+        "
+      >
+        <!-- product-card -->
+        <div class="flex-none bg-white">
+          <div>
+            <img
+              class="w-60"
+              src="https://d3jooanen2hdt4.cloudfront.net/media/month_oD3d63a.jpg"
+              alt=""
+            />
+          </div>
+          <div style="max-width: 15rem" class="px-1">
+            <p class="text-xs mt-2">
+              LEAN Weight Loss ( 28 LEAN Bar + 28 LEAN Green Tea Peach Sticks, 1
+              Month)
+            </p>
+            <p>
+              <span class="fa fa-star text-yellow-400"></span>
+              <span class="fa fa-star text-yellow-400"></span>
+              <span class="fa fa-star text-yellow-400"></span>
+              <span class="fa fa-star text-yellow-400"></span>
+              <span class="fa fa-star"></span>
+            </p>
+            <p class="text-red-700 text-lg">
+              $ 349
+              <span class="text-xs text-gray-400">
+                (₹22 /Serving) ₹7000 Save ₹3501 (50% off)
+              </span>
+            </p>
+            <p class="text-xs text-green-500">
+              Boost Metabolism, Burn Fat, Get Slim with clinically backed
+              ingredients like Spirulina .
+            </p>
+            <p class="text-sm text-gray-400 mt-3">
+              FREE 2-Day Delivery,
+              <span class="text-sm font-bold text-gray-700">Sep 13</span>
+            </p>
+            <hr style="padding-bottom: 1px" class="bg-gray-600 mt-2" />
+            <div>
+              <p class="my-2 text-gray-900">What all is included?</p>
+            </div>
+            <p
+              class="
+                text-center
+                bg-blue-700
+                rounded-b-sm
+                py-1
+                text-white text-lg
+                font-bold
+              "
+            >
+              Buy now
+            </p>
+          </div>
+        </div>
+
+        <!-- product-card -->
+        <div class="flex-none bg-white">
+          <div>
+            <img
+              class="w-60"
+              src="https://d3jooanen2hdt4.cloudfront.net/media/month_oD3d63a.jpg"
+              alt=""
+            />
+          </div>
+          <div style="max-width: 15rem" class="px-1">
+            <p class="text-xs mt-2">
+              LEAN Weight Loss ( 28 LEAN Bar + 28 LEAN Green Tea Peach Sticks, 1
+              Month)
+            </p>
+            <p>
+              <span class="fa fa-star text-yellow-400"></span>
+              <span class="fa fa-star text-yellow-400"></span>
+              <span class="fa fa-star text-yellow-400"></span>
+              <span class="fa fa-star text-yellow-400"></span>
+              <span class="fa fa-star"></span>
+            </p>
+            <p class="text-red-700 text-lg">
+              $ 349
+              <span class="text-xs text-gray-400">
+                (₹22 /Serving) ₹7000 Save ₹3501 (50% off)
+              </span>
+            </p>
+            <p class="text-xs text-green-500">
+              Boost Metabolism, Burn Fat, Get Slim with clinically backed
+              ingredients like Spirulina .
+            </p>
+            <p class="text-sm text-gray-400 mt-3">
+              FREE 2-Day Delivery,
+              <span class="text-sm font-bold text-gray-700">Sep 13</span>
+            </p>
+            <hr style="padding-bottom: 1px" class="bg-gray-600 mt-2" />
+            <div>
+              <p class="my-2 text-gray-900">What all is included?</p>
+            </div>
+            <p
+              class="
+                text-center
+                bg-blue-700
+                rounded-b-sm
+                py-1
+                text-white text-lg
+                font-bold
+              "
+            >
+              Buy now
+            </p>
+          </div>
+        </div>
+
+        <div class="flex-none bg-white">
+          <div>
+            <img
+              class="w-60"
+              src="https://d3jooanen2hdt4.cloudfront.net/media/month_oD3d63a.jpg"
+              alt=""
+            />
+          </div>
+          <div style="max-width: 15rem" class="px-1">
+            <p class="text-xs mt-2">
+              LEAN Weight Loss ( 28 LEAN Bar + 28 LEAN Green Tea Peach Sticks, 1
+              Month)
+            </p>
+            <p>
+              <span class="fa fa-star text-yellow-400"></span>
+              <span class="fa fa-star text-yellow-400"></span>
+              <span class="fa fa-star text-yellow-400"></span>
+              <span class="fa fa-star text-yellow-400"></span>
+              <span class="fa fa-star"></span>
+            </p>
+            <p class="text-red-700 text-lg">
+              $ 349
+              <span class="text-xs text-gray-400">
+                (₹22 /Serving) ₹7000 Save ₹3501 (50% off)
+              </span>
+            </p>
+            <p class="text-xs text-green-500">
+              Boost Metabolism, Burn Fat, Get Slim with clinically backed
+              ingredients like Spirulina .
+            </p>
+            <p class="text-sm text-gray-400 mt-3">
+              FREE 2-Day Delivery,
+              <span class="text-sm font-bold text-gray-700">Sep 13</span>
+            </p>
+            <hr style="padding-bottom: 1px" class="bg-gray-600 mt-2" />
+            <div>
+              <p class="my-2 text-gray-900">What all is included?</p>
+            </div>
+            <p
+              class="
+                text-center
+                bg-blue-700
+                rounded-b-sm
+                py-1
+                text-white text-lg
+                font-bold
+              "
+            >
+              Buy now
+            </p>
+          </div>
+        </div>
+
+        <div class="flex-none bg-white">
+          <div>
+            <img
+              class="w-60"
+              src="https://d3jooanen2hdt4.cloudfront.net/media/month_oD3d63a.jpg"
+              alt=""
+            />
+          </div>
+          <div style="max-width: 15rem" class="px-1">
+            <p class="text-xs mt-2">
+              LEAN Weight Loss ( 28 LEAN Bar + 28 LEAN Green Tea Peach Sticks, 1
+              Month)
+            </p>
+            <p>
+              <span class="fa fa-star text-yellow-400"></span>
+              <span class="fa fa-star text-yellow-400"></span>
+              <span class="fa fa-star text-yellow-400"></span>
+              <span class="fa fa-star text-yellow-400"></span>
+              <span class="fa fa-star"></span>
+            </p>
+            <p class="text-red-700 text-lg">
+              $ 349
+              <span class="text-xs text-gray-400">
+                (₹22 /Serving) ₹7000 Save ₹3501 (50% off)
+              </span>
+            </p>
+            <p class="text-xs text-green-500">
+              Boost Metabolism, Burn Fat, Get Slim with clinically backed
+              ingredients like Spirulina .
+            </p>
+            <p class="text-sm text-gray-400 mt-3">
+              FREE 2-Day Delivery,
+              <span class="text-sm font-bold text-gray-700">Sep 13</span>
+            </p>
+            <hr style="padding-bottom: 1px" class="bg-gray-600 mt-2" />
+            <div>
+              <p class="my-2 text-gray-900">What all is included?</p>
+            </div>
+            <p
+              class="
+                text-center
+                bg-blue-700
+                rounded-b-sm
+                py-1
+                text-white text-lg
+                font-bold
+              "
+            >
+              Buy now
+            </p>
+          </div>
+        </div>
+
+        <div class="flex-none bg-white">
+          <div>
+            <img
+              class="w-60"
+              src="https://d3jooanen2hdt4.cloudfront.net/media/month_oD3d63a.jpg"
+              alt=""
+            />
+          </div>
+          <div style="max-width: 15rem" class="px-1">
+            <p class="text-xs mt-2">
+              LEAN Weight Loss ( 28 LEAN Bar + 28 LEAN Green Tea Peach Sticks, 1
+              Month)
+            </p>
+            <p>
+              <span class="fa fa-star text-yellow-400"></span>
+              <span class="fa fa-star text-yellow-400"></span>
+              <span class="fa fa-star text-yellow-400"></span>
+              <span class="fa fa-star text-yellow-400"></span>
+              <span class="fa fa-star"></span>
+            </p>
+            <p class="text-red-700 text-lg">
+              $ 349
+              <span class="text-xs text-gray-400">
+                (₹22 /Serving) ₹7000 Save ₹3501 (50% off)
+              </span>
+            </p>
+            <p class="text-xs text-green-500">
+              Boost Metabolism, Burn Fat, Get Slim with clinically backed
+              ingredients like Spirulina .
+            </p>
+            <p class="text-sm text-gray-400 mt-3">
+              FREE 2-Day Delivery,
+              <span class="text-sm font-bold text-gray-700">Sep 13</span>
+            </p>
+            <hr style="padding-bottom: 1px" class="bg-gray-600 mt-2" />
+            <div>
+              <p class="my-2 text-gray-900">What all is included?</p>
+            </div>
+            <p
+              class="
+                text-center
+                bg-blue-700
+                rounded-b-sm
+                py-1
+                text-white text-lg
+                font-bold
+              "
+            >
+              Buy now
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sidebar -->
+    <aside
+      id="sidebar"
+      class="
+        top-0
+        left-0
+        w-64
+        bg-white
+        fixed
+        h-full
+        ease-in-out
+        transition-all
+        z-30
+        overflow
+        hidden
+      "
+    >
+      <i id="closeside" class="fas fa-times fa-2x mt-10 ml-5"></i>
+      <div
+        class="
+          flex flex-col
+          items-start
+          montserrat
+          mt-20
+          text-2xl
+          dot-none
+          gap-y-3
+          ml-5
+        "
+      >
+        <li>Home</li>
+
+        <li>THC Shop</li>
+
+        <li>Track Order</li>
+
+        <li>Our Story</li>
+
+        <li>Eva:AI Coach</li>
+
+        <li>Health Blog</li>
+
+        <li>Contact</li>
+      </div>
+    </aside>
+  </body>
+  <script src="./index.js"></script>
+</html>
